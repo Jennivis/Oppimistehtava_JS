@@ -1,0 +1,278 @@
+* {
+    font-family: 'Poiret One', cursive;
+}
+
+body {
+    background-color: #FDF9F5;
+}
+
+/* Sivun sisältö */
+#content {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 150px 1fr 1fr;
+}
+
+/* Ylätunniste */ 
+header {
+    background-color: #FAECE0;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    grid-column: 1/4;
+}
+
+#logo {
+    padding: 0px 10px 45px 40px;
+    width: 150px;
+}
+
+#title {
+    margin-left: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 65px;
+    color: #C7E0F6;
+    text-shadow: 2px 2px 8px #6FB0E8;
+}
+
+/* Säähaku ja tulokset */
+#header {
+    text-align: center;
+}
+
+hr {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    height: 2px;
+    background-color: #333;
+}
+
+#searchCity {
+    grid-column: 1/3;
+    margin-left: 50px;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #FCF4EC;
+}
+
+#searchCity > p {
+    margin: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#cityButton > #city {
+    margin-left: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #E9F3FB;
+    border: 2px solid #C7E0F6;
+    font-size: 16px;
+}
+
+#cityButton > .button {
+    background-color: #E9F3FB;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #C7E0F6;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    margin-left: 15px;
+    width: 80px;
+    height: 45px;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-color: #C7E0F6;
+    cursor: pointer;
+    /*Miksei toimi??!?*/
+}
+
+#emptyCity {
+    padding-left: 20px;
+}
+
+#enteredCity {
+    padding-left: 20px;
+}
+
+#deg {
+    border-radius: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.fa-lightbulb {
+    color: #FFE367;
+    padding: 10px;
+}
+
+#recommendation {
+    border-radius: 5px;
+    padding: 15px;
+    font-style: italic;
+}
+
+#descriptionTable {
+    margin-top: 20px;
+}
+
+/* Kuva */
+#image {
+    grid-column: 3/4;
+    border-radius: 5px;
+    background-color: #FCF4EC;
+    margin-right: 50px;
+}
+
+#map {
+    margin: auto;
+    padding: 90px 50px 50px 50px;
+    width: 650px;
+}
+
+/* Alatunniste */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6DDC7;
+    grid-column: 1/4;
+    border: #F6DDC7 solid 3px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsiivisuus */
+@media screen and (max-width: 1276px) {
+
+    #cityButton > .button {
+        margin: auto;
+        width: 100px;
+        height: 40px;
+    }
+
+    #cityButton > #city {
+        margin: auto;
+        width: 200px;
+    }
+
+    #cityButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        margin-top: 40px;
+    }
+
+    #map {
+        width: 500px;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+
+    #cityButton > .button {
+        margin-right: 260px;
+        width: 100px;
+        height: 40px;
+    }
+
+    #cityButton > #city {
+        margin-left: 250px;
+        width: 200px;
+    }
+
+    #results {
+        text-align: center;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchCity {
+        margin-right: 50px;
+    }
+
+    #image {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    #map {
+        margin-top: -40px;
+    }
+
+    #descriptionTable {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}    
+
+@media screen and (max-width: 732px) {
+
+    #map {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+
+    #map {
+        width: 300px;
+    }
+
+    #logo {
+        margin-top: 30px;
+        width: 125px;
+    }
+    
+    #title {
+        margin-top: 70px;
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 525px) {
+
+    #map {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    #map {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #logo {
+        margin-top: 40px;
+        width: 100px;
+    }
+    
+    #title {
+        margin-top: 70px;
+        font-size: 40px;
+    }
+    
+}

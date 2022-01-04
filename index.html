@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Päivän Sää</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/57afca8299.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <script src="code.js"></script>
+</head>
+<body onload="startData()">
+    <!-- Sivun sisältö -->
+    <div id="content">
+        <!-- Ylätunniste -->
+        <header>
+            <table>
+                <td>
+                    <img src="images/logosun.png" alt="" id="logo">
+                </td>
+                <td>
+                    <p id="title">Päivän Sää</p>
+                </td>
+            </table>
+        </header>
+        <!-- Säähaku ja tulokset -->
+        <div id="searchCity">
+            <p id="header">Hae päivän säätiedot</p>
+            <hr>
+            <div id="cityButton">
+                <input type="text" id="city" placeholder="Syötä paikkakunta"> <button type="button" class="button" onclick="searchWeather()">Hae</button>
+            </div>
+            <div id="results">
+                <h3>
+                    <label for="" id="enteredCity"></label>
+                </h3>
+                <section id="deg">
+                    <label for="" id="degrees"></label>
+                    <label for="" id="description"></label>
+                </section>
+                <section id="recommendation">
+                    <table id="descriptionTable">
+                        <td>
+                            <i class="fas fa-lightbulb fa-2x"></i>
+                        </td>
+                        <td>
+                            <label for="" id="whatToDo"></label>
+                        </td>
+                    </table> 
+                </section>
+            </div>
+        </div>
+        <!-- Kuva -->
+        <div id="image">
+            <img src="images/world-white.png" alt="" id="map">
+        </div>
+        <!-- Alatunniste -->
+        <footer>
+            <table>
+                <tr>
+                  <th>Tekijä</th>
+                </tr>
+                <tr>
+                  <td>Jenni Visuri</td>
+                </tr>
+                <tr>
+                  <td> <strong>Kuvat:</strong> Pixabay</td>
+                </tr>
+              </table>
+        </footer>
+    </div>
+</body>
+</html>
