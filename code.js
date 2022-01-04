@@ -84,13 +84,15 @@ function classification() {
      if (degrees >= 25) {
         document.getElementById("whatToDo").innerHTML = "Huh mikä helle! Muista nesteytys ja hattu päähän.";
      } else if (degrees >= 20 && degrees < 25) {
-         document.getElementById("whatToDo").innerHTML = "Keli on lämmin. Olisiko rantapäivä tänään?";
-     } else if (degrees > 5 && degrees < 20) {
-         document.getElementById("whatToDo").innerHTML = "Ei mikään rantakeli ehkä tänään. Ulkoilu silti kannattaa.";
+        document.getElementById("whatToDo").innerHTML = "Keli on lämmin. Olisiko rantapäivä tänään?";
+     } else if (degrees >= 15 && degrees < 20) {
+        document.getElementById("whatToDo").innerHTML = "Ei mikään rantakeli ehkä tänään. Ulkoilu silti kannattaa.";
+     } else if (degrees >= 5 && degrees < 15) {
+        document.getElementById("whatToDo").innerHTML = "Viileämpi sää tänään. Mainio päivä esimerkiksi shoppailemiselle.";
      } else if (degrees > -5 && degrees < 5) {
-         document.getElementById("whatToDo").innerHTML = "Sää on tänään kolea. Muista pukeutua lämpimämmin.";
-     } else if (degrees < -5 && degrees > -15) {
-         document.getElementById("whatToDo").innerHTML = "Mainio ulkoilukeli tänään! Pitäisikö mennä luistelemaan tai hiihtämään?";
+        document.getElementById("whatToDo").innerHTML = "Sää on tänään kolea. Muista pukeutua lämpimämmin.";
+     } else if (degrees <= -5 && degrees > -15) {
+        document.getElementById("whatToDo").innerHTML = "Mainio ulkoilukeli tänään! Pitäisikö mennä luistelemaan tai hiihtämään?";
      } else if (degrees <= -15) {
         document.getElementById("whatToDo").innerHTML = "Kovat pakkaslukemat tänään. Jos aiot ulkoilla, muista kerrospukeutua.";
      }    
