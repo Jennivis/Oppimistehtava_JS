@@ -88,7 +88,7 @@ hr {
 }
 
 .button:hover {
-    background-color: #C7E0F6;
+    background-color: #C7E0F6!important;
     cursor: pointer;
     /*Miksei toimi??!?*/
 }
