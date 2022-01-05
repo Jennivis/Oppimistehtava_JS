@@ -131,7 +131,7 @@ hr {
 
 #map {
     margin: auto;
-    padding: 90px 50px 50px 50px;
+    padding: 50px;
     width: 650px;
 }
 
@@ -211,7 +211,7 @@ footer {
     }
 
     #map {
-        margin-top: -40px;
+        margin-top: 10px;
     }
 
     #descriptionTable {

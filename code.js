@@ -26,7 +26,7 @@ function get_weather(){
     // Luetaan rajapinnasta asteet ja sään kuvaus sekä tutkitaan, onko syötettyä paikkaa olemassa
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange=function() {
-        if(this.readyState === 4 && this.status === 200){
+        if (this.readyState === 4 && this.status === 200) {
         let weather = JSON.parse(this.response);
         if (weather.count == 0) {
             document.getElementById("recommendation").style.display = "none";
@@ -76,7 +76,6 @@ function searchWeather () {
         document.getElementById("enteredCity").style.fontSize = "28px"
         document.getElementById("city").focus();
     }
-
 }
 
 // Funktio, jossa tulostetaan käyttäjälle viesti lämpötilan mukaisesti
