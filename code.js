@@ -74,6 +74,7 @@ function searchWeather () {
         get_weather();
         document.getElementById("recommendation").style.display = "block";
         document.getElementById("enteredCity").style.fontSize = "28px"
+        document.getElementById("city").focus();
     }
 
 }
